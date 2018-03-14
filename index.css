@@ -1,0 +1,36 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    background-color: rgb(7, 77, 77);
+}
+
+.box {
+    background: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: animateme;
+    animation-duration: 5s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    /* animation-delay: 1s; */
+    /* animation-direction: alternate; */
+    /* animation-timing-function:ease-out; */
+
+}
+
+/* @keyframes animateme {
+    0% {background-color: white; left: 0px; top:0px; border-radius: 0 0 0 0;}
+    25% {background-color: azure;left: 300px; top:0px; border-radius: 50% 0 0 0;}
+    50% {background-color: aqua; left: 300px; top:300px; border-radius: 50% 50% 0% 0;}
+    75% {background-color: cadetblue; left: 0px; top:300px; border-radius: 50% 50% 50% 0;}
+    100% {background-color: white; left: 0px; top:0px; border-radius: 50% 50% 0% 50%;}
+} */
+
+@keyframes animateme {
+    0% {background-color: white; border-radius: 0 0 0 0;}
+    25% {background-color: azure; border-radius: 50% 0 0 0;}
+    50% {background-color: aqua;  border-radius: 50% 50% 0% 0;}
+    75% {background-color: cadetblue; border-radius: 50% 50% 50% 0;}
+    100% {background-color: white; border-radius: 50% 50% 0% 50%;}
+}
