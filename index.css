@@ -10,13 +10,12 @@
     height: 200px;
     position: relative;
     animation-name: animateme;
-    animation-duration: 5s;
-    animation-iteration-count:1;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
     animation-fill-mode: forwards;
-    /* animation-delay: 1s; */
-    /* animation-direction: alternate; */
-    /* animation-timing-function:ease-out; */
-
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-timing-function:ease-out;
 }
 
 /* @keyframes animateme {
@@ -29,8 +28,8 @@
 
 @keyframes animateme {
     0% {background-color: white; border-radius: 0 0 0 0;}
-    25% {background-color: azure; border-radius: 50% 0 0 0;}
-    50% {background-color: aqua;  border-radius: 50% 50% 0% 0;}
-    75% {background-color: cadetblue; border-radius: 50% 50% 50% 0;}
-    100% {background-color: white; border-radius: 50% 50% 0% 50%;}
+    25% {background-color: azure; border-radius: 50% 50% 50% 0;}
+    50% {background-color: aqua;  border-radius: 50% 50% 0 50%;}
+    75% {background-color: aquamarine; border-radius: 50% 50% 50% 0;}
+    100% {background-color: cadetblue; border-radius: 50% 50% 0% 50%;}
 }
