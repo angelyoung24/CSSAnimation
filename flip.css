@@ -1,0 +1,63 @@
+* {
+    background-color: #000000;
+}
+
+
+.flip-container {
+    perspective: 1000px;
+    width:800px;
+    margin: 200px;
+}
+
+/* flip when hovered */
+.flip-container:hover .flipone, .flip-container.hover .flipone {
+    transform: rotateY(-180deg);
+
+}
+
+.flip-container, .frontone, .backone {
+    height: 340px;
+    width: 220px;
+    background-color: rgba(255, 255, 255, 0.897);
+}
+
+.flipone {
+    transition: all .5s ease-in;
+    transform-style: preserve-3d;
+    transform-origin: left;
+    position: absolute;
+}
+
+.frontone, .backone {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.frontone {
+    z-index: 2;
+    transform: rotateX(180deg);
+    background-color: rgba(101, 187, 221, 0.719);
+}
+
+.backone {
+    transform: rotateX(0deg);
+    background-color: blue;
+}
+
+.vertical.flip-container {
+    position: relative;
+}
+
+.vertical .backone {
+    transform: rotateY(180deg);
+}
+
+.vertical.flip-container .flip {
+    transform-origin: 100% 213.5px;
+}
+
+
+
+
